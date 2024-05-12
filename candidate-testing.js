@@ -30,8 +30,13 @@ candidateAnswer = input.question(question);
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-  console.log(`Your answer: ${candidateAnswer}`);
-  console.log(`Correct Answer: ${correctAnswer}`);
+  if (candidateAnswer.toLowerCase() != correctAnswer.toLowerCase()) {
+    console.log(`Sorry, your answer is incorrect: ${candidateAnswer}`);
+    console.log(`The correct answer is: ${correctAnswer}`);
+
+  } else {
+    console.log(`That is correct!: ${correctAnswer}`);
+  }
 
 
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
@@ -47,7 +52,7 @@ function runProgram() {
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
-
+runProgram();
 // ----------- Don't write any code or change any code below this line ---------- //
 module.exports = {
   candidateName: candidateName,
