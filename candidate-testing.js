@@ -64,7 +64,7 @@ function runProgram() {
   // TODO 1.1c: Greet candidate using their name //
   console.log(`Hello ${candidateName}!`);
   askQuestion();
-  gradeQuiz(candidateAnswers);//this is where the this. was
+  gradeQuiz(candidateAnswers);
 }
 runProgram()
 // ----------- Don't write any code or change any code below this line ---------- //
