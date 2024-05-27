@@ -46,7 +46,7 @@ function gradeQuiz(candidateAnswers) {
   let numberOfCorrectAnswers = 0;
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   for (let i = 0; i < candidateAnswers.length; i++) {
-    if (candidateAnswers[i].toLowerCase() === String(correctAnswers[i]).toLowerCase()) {
+    if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
       numberOfCorrectAnswers += 1;
       console.log(`${questions[i]} That is correct! You answered: ${candidateAnswers[i]}`);
     } else {
